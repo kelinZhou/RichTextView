@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RichTextView">
+        <!--设置查看更多的提示文本-->
+        <attr name="seeMoreText" format="string"/>
+        <!--设置查看更多的提示文本的字体颜色-->
+        <attr name="seeMoreTextColor" format="color|string"/>
+        <!--设置查看更多的提示文本的字体大小-->
+        <attr name="seeMoreTextSize" format="dimension"/>
+        <!--设置查看更多文本的内边距-->
+        <attr name="seeMoreTextPadding" format="dimension"/>
+        <!--设置查看更多的提示文本的字体样式-->
+        <attr name="seeMoreTextStyle" format="flags">
+            <!--加粗-->
+            <flag name="bold" value="0x10"/>
+            <!--斜体-->
+            <flag name="italic" value="0x11"/>
+            <!--加粗且斜体-->
+            <flag name="bold_italic" value="0x12"/>
+            <!--加粗且带下划线-->
+            <flag name="bold_underline" value="0x13"/>
+            <!--斜体且带下划线-->
+            <flag name="italic_underline" value="0x14"/>
+            <!--斜体、加粗且带下划线-->
+            <flag name="italic_underline_bold" value="0x15"/>
+        </attr>
+        <!--是否是通过点击整个View触发查看更多-->
+        <attr name="clickViewSeeMore" format="boolean"/>
+        <attr name="textRawResId" format="reference"/>
+    </declare-styleable>
+</resources>
