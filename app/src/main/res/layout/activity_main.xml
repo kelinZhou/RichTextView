@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:context=".MainActivity">
+
+    <com.kelin.richtextview.RichTextView
+            android:id="@+id/rtvRichText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textRawResId="@raw/test_text"
+            android:maxLines="7"
+            android:lineSpacingMultiplier="1.4"
+            app:clickViewSeeMore="false"
+            app:seeMoreText="查看更多"
+            app:seeMoreTextColor="#000000"
+            app:seeMoreTextSize="15sp"
+            app:seeMoreTextStyle="bold"
+            android:padding="20dp"/>
+
+</ScrollView>
